@@ -13,3 +13,5 @@
 #
 # You can remove these comments if you want or leave
 # them for future reference.
+
+$env.BAT_PAGER = "less -r"
