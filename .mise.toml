@@ -20,5 +20,5 @@ chezmoi apply
 
 [tasks.use-starship]
 run = '''
-cp assets/starship/gruvbox-rainbow.toml dot_config/empty_starship.toml
+cp assets/starship/gruvbox-rainbow.toml dot_config/starship.toml
 '''
