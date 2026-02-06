@@ -10,5 +10,5 @@ chezmoi apply
 
 [tasks.use-starship]
 run = '''
-cp assets/starship/powerline.toml dot_config/starship.toml
+cp assets/starship/tokyo.toml dot_config/starship.toml
 '''
