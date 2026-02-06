@@ -4,9 +4,10 @@ version = "2.69.3"
 linux-x64 = { asset_pattern = "chezmoi_{version}_linux-musl_amd64.tar.gz" }
 
 [tasks.apply-dotfiles]
-run = '''
-chezmoi apply
-'''
+run = "chezmoi apply -S ."
+
+[tasks.bump-tools]
+run = "mise upgrade --bump --cd dot_config/mise/conf.d"
 
 [tasks.use-starship]
 run = '''
