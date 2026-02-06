@@ -1,4 +1,4 @@
-# dotfiles-via-nu
+# dotfiles
 
 ## 前置条件
 
