@@ -129,14 +129,14 @@ for opt in "${set_opts[@]}"; do
 done
 unset opt set_opts
 
-source <(fzf --zsh)
-
+eval "$(mise activate zsh)"
 eval "$(carapace _carapace zsh)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh --disable-up-arrow)"
 eval "$(starship init zsh)"
-eval "$(mise activate zsh)"
 eval "$(direnv hook zsh)"
+
+source <(fzf --zsh)
 
 autoload -U +X bashcompinit && bashcompinit
 if [[ "$TERM" == "xterm-kitty" ]] && ! infocmp "$TERM" >/dev/null 2>&1; then 
